@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOSE | Cyber Security Expert &amp; Penetration Tester</title>
+<meta name="description" content="BOSE — Cyber Security Expert, Penetration Tester and Ethical Hacker. Offensive security, vulnerability assessments, red teaming and security training.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Favicon (inline SVG shield, no external file needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300ff9d'%3E%3Cpath d='M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4Z'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__terminal">
+    <p><span class="preloader__prompt">root@bose</span>:<span class="preloader__path">~</span>$ <span id="preloaderLine">initializing secure_session...</span><span class="cursor"></span></p>
+  </div>
+</div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo">
+      <span class="logo__bracket">&lt;</span>BOSE<span class="logo__bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav__link" data-nav>About</a></li>
+        <li><a href="#services" class="nav__link" data-nav>Services</a></li>
+        <li><a href="#skills" class="nav__link" data-nav>Skills</a></li>
+        <li><a href="#experience" class="nav__link" data-nav>Experience</a></li>
+        <li><a href="#projects" class="nav__link" data-nav>Projects</a></li>
+        <li><a href="#contact" class="nav__link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--sm btn--primary">Get In Touch</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <canvas id="matrixCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <p class="hero__overline reveal">
+        <span class="prompt">root@bose:~$</span> whoami
+      </p>
+      <h1 class="hero__title reveal">
+        I'm <span class="text-accent">BOSE</span>
+      </h1>
+      <p class="hero__subtitle reveal">
+        <span id="typedRole">Cyber Security Expert</span><span class="cursor"></span>
+      </p>
+      <p class="hero__desc reveal">
+        I help organizations find weaknesses before attackers do — through offensive
+        security testing, red team operations and practical security guidance.
+        <strong>10+ years</strong> breaking things responsibly, so you don't have to
+        find out the hard way.
+      </p>
+
+      <div class="hero__cta reveal">
+        <a href="#contact" class="btn btn--primary">Work With Me</a>
+        <a href="#projects" class="btn btn--ghost">View Case Studies</a>
+      </div>
+
+      <div class="hero__social reveal" aria-label="Social links">
+        <a href="#" class="social-icon" aria-label="GitHub" data-icon="github"></a>
+        <a href="#" class="social-icon" aria-label="LinkedIn" data-icon="linkedin"></a>
+        <a href="#" class="social-icon" aria-label="X (Twitter)" data-icon="x"></a>
+        <a href="mailto:hello@bose.dev" class="social-icon" aria-label="Email" data-icon="mail"></a>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section__tag reveal"><span class="prompt">$</span> cat about.md</p>
+      <h2 class="section__title reveal">About Me</h2>
+
+      <div class="about__grid">
+        <div class="about__visual reveal">
+          <div class="terminal-window">
+            <div class="terminal-window__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="terminal-window__title">bose@security: ~</span>
+            </div>
+            <div class="terminal-window__body">
+<pre><span class="tl-cmd">$ nmap -sV -p- target.internal</span>
+Starting Nmap scan...
+PORT     STATE  SERVICE
+22/tcp   open   ssh
+443/tcp  open   https
+8080/tcp open   http-proxy
+
+<span class="tl-cmd">$ whoami</span>
+BOSE — Offensive Security Engineer
+Status: <span class="tl-ok">[ AVAILABLE FOR ENGAGEMENTS ]</span>
+</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__text reveal">
+          <p>
+            I'm a cyber security expert specializing in penetration testing, red team
+            operations and application security. I work with startups, enterprises and
+            public sector organizations to identify, exploit and remediate security
+            weaknesses before real attackers can.
+          </p>
+          <p>
+            My approach combines deep technical testing with clear, actionable
+            reporting — so your engineers know exactly what to fix, and your
+            leadership understands exactly what's at risk.
+          </p>
+          <p>
+            When I'm not testing systems, I'm researching new attack techniques,
+            contributing to open-source security tools, and mentoring the next
+            generation of ethical hackers.
+          </p>
+
+          <ul class="about__list">
+            <li><span class="check"></span> OSCP / CEH / CISSP certified</li>
+            <li><span class="check"></span> 150+ penetration tests delivered</li>
+            <li><span class="check"></span> Responsible disclosure &amp; bug bounty contributor</li>
+          </ul>
+
+          <a href="#" class="btn btn--primary">Download CV</a>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <span class="stat__number" data-count="10">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-count="150">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Pentests Delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-count="400">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Vulnerabilities Found</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-count="60">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Clients Protected</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <p class="section__tag reveal"><span class="prompt">$</span> ls ./services</p>
+      <h2 class="section__title reveal">What I Do</h2>
+      <p class="section__subtitle reveal">
+        End-to-end offensive security services to help you find and fix
+        vulnerabilities before they're exploited.
+      </p>
+
+      <div class="grid grid--3" id="servicesGrid"><!-- injected by js --></div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section__tag reveal"><span class="prompt">$</span> cat skills.json</p>
+      <h2 class="section__title reveal">Skills &amp; Tools</h2>
+
+      <div class="skills__grid" id="skillsGrid"><!-- injected by js --></div>
+
+      <div class="tag-cloud reveal" id="toolsCloud"><!-- injected by js --></div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <p class="section__tag reveal"><span class="prompt">$</span> git log --oneline career</p>
+      <h2 class="section__title reveal">Experience</h2>
+
+      <div class="timeline" id="timeline"><!-- injected by js --></div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS ============ -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <p class="section__tag reveal"><span class="prompt">$</span> ls -la ./certifications</p>
+      <h2 class="section__title reveal">Certifications</h2>
+
+      <div class="grid grid--4" id="certsGrid"><!-- injected by js --></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <p class="section__tag reveal"><span class="prompt">$</span> ls ./projects --sort=recent</p>
+      <h2 class="section__title reveal">Case Studies &amp; Projects</h2>
+
+      <div class="grid grid--3" id="projectsGrid"><!-- injected by js --></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section__tag reveal"><span class="prompt">$</span> ./contact.sh --secure</p>
+      <h2 class="section__title reveal">Let's Talk Security</h2>
+      <p class="section__subtitle reveal">
+        Have a project, an assessment, or just a question? Send an encrypted-feeling
+        message below — I usually reply within 24 hours.
+      </p>
+
+      <div class="contact__grid">
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="john@company.com">
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Penetration testing inquiry">
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">
+            <span>Send Message</span>
+          </button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact__info reveal">
+          <div class="info-card">
+            <span class="info-card__icon" data-icon="mail"></span>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:hello@bose.dev">hello@bose.dev</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-card__icon" data-icon="pin"></span>
+            <div>
+              <h4>Location</h4>
+              <span>Copenhagen, Denmark — Remote worldwide</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-card__icon" data-icon="clock"></span>
+            <div>
+              <h4>Availability</h4>
+              <span>Open for new engagements</span>
+            </div>
+          </div>
+
+          <div class="contact__social">
+            <a href="#" class="social-icon" aria-label="GitHub" data-icon="github"></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn" data-icon="linkedin"></a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)" data-icon="x"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#home" class="logo">
+      <span class="logo__bracket">&lt;</span>BOSE<span class="logo__bracket">/&gt;</span>
+    </a>
+    <p class="footer__tagline">Securing your digital world, one exploit at a time.</p>
+
+    <ul class="footer__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="footer__social">
+      <a href="#" class="social-icon" aria-label="GitHub" data-icon="github"></a>
+      <a href="#" class="social-icon" aria-label="LinkedIn" data-icon="linkedin"></a>
+      <a href="#" class="social-icon" aria-label="X (Twitter)" data-icon="x"></a>
+      <a href="mailto:hello@bose.dev" class="social-icon" aria-label="Email" data-icon="mail"></a>
+    </div>
+
+    <p class="footer__copy">&copy; <span id="year"></span> BOSE. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <span data-icon="arrow-up"></span>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
