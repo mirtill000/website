@@ -7,11 +7,10 @@
 
 const SITE_DATA = {
   roles: [
-    "Cyber Security Expert",
-    "Penetration Tester",
-    "Ethical Hacker",
-    "Red Team Operator",
-    "Security Researcher"
+    "Cyber Security Director",
+    "IT Risk & Fraud Management Leader",
+    "Global Security Program Manager",
+    "CISM-Certified Security Leader"
   ],
 
   services: [
@@ -82,40 +81,39 @@ const SITE_DATA = {
 
   experience: [
     {
-      date: "2022 — Present",
-      role: "Lead Penetration Tester",
-      company: "Independent Consultant / BOSE Security",
-      desc: "Leading offensive security engagements for enterprise clients across finance, healthcare and SaaS — from network pentests to full red team simulations."
+      date: "2019 — Present",
+      role: "Cyber Security Director",
+      company: "Campari Group",
+      desc: "Leading global cyber security strategy and incident response, including the rollout of Microsoft Defender and Sentinel across the group following the 2020 ransomware attack."
     },
     {
-      date: "2019 — 2022",
-      role: "Senior Security Consultant",
-      company: "CyberDefense Group",
-      desc: "Delivered 100+ web, mobile and infrastructure penetration tests; built the firm's internal red team playbook and mentored junior consultants."
+      date: "2015 — 2019",
+      role: "Cyber Security Manager",
+      company: "Mediobanca",
+      desc: "Managed cyber security operations, risk assessment and fraud prevention programs for one of Italy's leading investment banking groups."
     },
     {
-      date: "2016 — 2019",
-      role: "Security Analyst",
-      company: "SOC Solutions ApS",
-      desc: "Monitored enterprise networks for threats, led incident response efforts, and implemented SIEM detection rules that cut mean-time-to-detect by 40%."
+      date: "2013 — 2015",
+      role: "Cyber Security Manager",
+      company: "EFSA (European Food Safety Authority)",
+      desc: "Oversaw IT security and risk management, protecting the agency's systems and data across its EU-wide operations."
     },
     {
-      date: "2014 — 2016",
-      role: "IT Systems & Network Administrator",
-      company: "Nordic Tech Services",
-      desc: "Managed enterprise infrastructure and first became fascinated with how it could be broken — the start of a career in offensive security."
+      date: "2008 — 2013",
+      role: "Cyber Security Manager",
+      company: "Telecom Italia",
+      desc: "Managed cyber security and fraud management initiatives for one of Italy's largest telecommunications providers."
+    },
+    {
+      date: "2008 — 2013",
+      role: "Cyber Security Manager",
+      company: "Emaze",
+      desc: "In parallel, provided cyber security management and consulting support at Emaze."
     }
   ],
 
   certifications: [
-    { code: "OSCP", name: "Offensive Security Certified Professional", org: "Offensive Security" },
-    { code: "CEH", name: "Certified Ethical Hacker", org: "EC-Council" },
-    { code: "CISSP", name: "Certified Info. Systems Security Pro.", org: "(ISC)²" },
-    { code: "OSCE", name: "Offensive Security Certified Expert", org: "Offensive Security" },
-    { code: "CRTP", name: "Certified Red Team Professional", org: "Pentester Academy" },
-    { code: "CompTIA", name: "Security+", org: "CompTIA" },
-    { code: "AWS", name: "AWS Certified Security – Specialty", org: "Amazon Web Services" },
-    { code: "ISO", name: "ISO 27001 Lead Auditor", org: "PECB" }
+    { code: "CISM", name: "Certified Information Security Manager", org: "ISACA" }
   ],
 
   projects: [
