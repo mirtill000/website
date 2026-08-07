@@ -9,12 +9,12 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 
 <!-- Favicon (inline SVG shield, no external file needed) -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300ff9d'%3E%3Cpath d='M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4Z'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23F6D949' stroke='%2314173A' stroke-width='1.5'%3E%3Cpath d='M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4Z'/%3E%3C/svg%3E">
 </head>
 <body>
 
@@ -28,8 +28,12 @@
 <!-- ============ HEADER / NAV ============ -->
 <header class="header" id="header">
   <div class="container header__inner">
-    <a href="#home" class="logo">
-      <span class="logo__bracket">&lt;</span>BOSE<span class="logo__bracket">/&gt;</span>
+    <a href="#home" class="brand">
+      <span class="brand__logo">B</span>
+      <span class="brand__text">
+        <span class="brand__name">BOSE</span>
+        <span class="brand__tag">SECURITY LAB V1.0</span>
+      </span>
     </a>
 
     <nav class="nav" id="nav">
@@ -45,7 +49,7 @@
     </nav>
 
     <div class="header__actions">
-      <a href="#contact" class="btn btn--sm btn--primary">Get In Touch</a>
+      <a href="#contact" class="btn btn--sm btn--yellow">Get In Touch</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -57,42 +61,61 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="home">
-    <canvas id="matrixCanvas" class="hero__canvas" aria-hidden="true"></canvas>
     <div class="hero__grid" aria-hidden="true"></div>
 
-    <div class="container hero__content">
-      <p class="hero__overline reveal">
-        <span class="prompt">root@bose:~$</span> whoami
-      </p>
-      <h1 class="hero__title reveal">
-        I'm <span class="text-accent">BOSE</span>
-      </h1>
-      <p class="hero__subtitle reveal">
-        <span id="typedRole">Cyber Security Expert</span><span class="cursor"></span>
-      </p>
-      <p class="hero__desc reveal">
-        I help organizations find weaknesses before attackers do — through offensive
-        security testing, red team operations and practical security guidance.
-        <strong>10+ years</strong> breaking things responsibly, so you don't have to
-        find out the hard way.
-      </p>
+    <div class="container hero__layout">
+      <div class="hero__left">
+        <p class="hero__overline reveal">
+          <span class="prompt">root@bose:~$</span> whoami
+        </p>
+        <h1 class="hero__title reveal">
+          Welcome to the <span class="text-accent">BOSE</span> Security Lab.
+        </h1>
+        <p class="hero__subtitle reveal">
+          <span id="typedRole">Cyber Security Expert</span><span class="cursor"></span>
+        </p>
+        <p class="hero__desc reveal">
+          I help organizations find weaknesses before attackers do — through offensive
+          security testing, red team operations and practical security guidance.
+          <strong>10+ years</strong> breaking things responsibly, so you don't have to
+          find out the hard way.
+        </p>
 
-      <div class="hero__cta reveal">
-        <a href="#contact" class="btn btn--primary">Work With Me</a>
-        <a href="#projects" class="btn btn--ghost">View Case Studies</a>
+        <div class="hero__cta reveal">
+          <a href="#contact" class="btn btn--yellow">Work With Me</a>
+          <a href="#projects" class="btn btn--cyan">View Case Studies</a>
+        </div>
+
+        <div class="hero__social reveal" aria-label="Social links">
+          <a href="#" class="social-icon" aria-label="GitHub" data-icon="github"></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn" data-icon="linkedin"></a>
+          <a href="#" class="social-icon" aria-label="X (Twitter)" data-icon="x"></a>
+          <a href="mailto:hello@bose.dev" class="social-icon" aria-label="Email" data-icon="mail"></a>
+        </div>
       </div>
 
-      <div class="hero__social reveal" aria-label="Social links">
-        <a href="#" class="social-icon" aria-label="GitHub" data-icon="github"></a>
-        <a href="#" class="social-icon" aria-label="LinkedIn" data-icon="linkedin"></a>
-        <a href="#" class="social-icon" aria-label="X (Twitter)" data-icon="x"></a>
-        <a href="mailto:hello@bose.dev" class="social-icon" aria-label="Email" data-icon="mail"></a>
+      <div class="hero__right reveal">
+        <div class="hero__frame">
+          <div class="hero__frame-swatches" aria-hidden="true"><span></span><span></span><span></span></div>
+          <svg class="hero__agent" viewBox="0 0 200 240" role="img" aria-label="Pixel-art illustration of a security agent">
+            <rect x="70" y="18" width="60" height="56" rx="6" fill="#F0C99A"/>
+            <rect x="62" y="10" width="76" height="24" rx="8" fill="#171A3D"/>
+            <rect x="76" y="46" width="48" height="12" fill="#5FE0EC"/>
+            <rect x="86" y="74" width="28" height="14" fill="#F0C99A"/>
+            <rect x="46" y="88" width="108" height="86" rx="10" fill="#5FE0EC"/>
+            <rect x="46" y="88" width="108" height="30" fill="#FF8FD6"/>
+            <rect x="86" y="118" width="28" height="56" fill="#171A3D"/>
+            <rect x="30" y="96" width="20" height="64" rx="6" fill="#F0C99A"/>
+            <rect x="150" y="96" width="20" height="64" rx="6" fill="#F0C99A"/>
+            <rect x="60" y="174" width="34" height="52" fill="#171A3D"/>
+            <rect x="106" y="174" width="34" height="52" fill="#171A3D"/>
+            <rect x="55" y="222" width="44" height="14" rx="4" fill="#F6D949"/>
+            <rect x="101" y="222" width="44" height="14" rx="4" fill="#F6D949"/>
+          </svg>
+        </div>
       </div>
     </div>
 
-    <a href="#about" class="hero__scroll" aria-label="Scroll down">
-      <span></span>
-    </a>
   </section>
 
   <!-- ============ ABOUT ============ -->
@@ -303,8 +326,12 @@ Status: <span class="tl-ok">[ AVAILABLE FOR ENGAGEMENTS ]</span>
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="container footer__inner">
-    <a href="#home" class="logo">
-      <span class="logo__bracket">&lt;</span>BOSE<span class="logo__bracket">/&gt;</span>
+    <a href="#home" class="brand brand--footer">
+      <span class="brand__logo">B</span>
+      <span class="brand__text">
+        <span class="brand__name">BOSE</span>
+        <span class="brand__tag">SECURITY LAB V1.0</span>
+      </span>
     </a>
     <p class="footer__tagline">Securing your digital world, one exploit at a time.</p>
 
@@ -326,6 +353,11 @@ Status: <span class="tl-ok">[ AVAILABLE FOR ENGAGEMENTS ]</span>
     <p class="footer__copy">&copy; <span id="year"></span> BOSE. All rights reserved.</p>
   </div>
 </footer>
+
+<a href="#contact" class="ask-ai" aria-label="Jump to contact">
+  <span class="ask-ai__box" aria-hidden="true"></span>
+  <span class="ask-ai__label">Ask BOSE.AI</span>
+</a>
 
 <button class="back-to-top" id="backToTop" aria-label="Back to top">
   <span data-icon="arrow-up"></span>
