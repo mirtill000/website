@@ -312,7 +312,7 @@ input, textarea { font: inherit; }
   border-radius: var(--radius-md);
   padding: 30px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 .hero__frame-swatches {
@@ -327,7 +327,17 @@ input, textarea { font: inherit; }
 .hero__frame-swatches span:nth-child(1) { background: var(--mint); }
 .hero__frame-swatches span:nth-child(2) { background: var(--pink); }
 .hero__frame-swatches span:nth-child(3) { background: var(--cyan); }
-.hero__agent { width: 100%; max-width: 220px; height: auto; }
+.hero__agent {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 3px solid var(--ink);
+  box-shadow: 6px 6px 0 0 var(--ink);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
 
 .hero__scroll {
   display: none;
@@ -452,7 +462,7 @@ input, textarea { font: inherit; }
 .stats {
   margin-top: 80px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
 }
 .stat {
@@ -660,6 +670,9 @@ input, textarea { font: inherit; }
 .cert-card__name { font-weight: 700; font-size: 0.92rem; margin-bottom: 4px; color: var(--ink); }
 .cert-card__org { color: var(--text-muted-light); font-size: 0.76rem; font-family: var(--font-mono); font-weight: 600; }
 
+/* Certifications grid centers gracefully regardless of item count */
+#certsGrid { grid-template-columns: repeat(auto-fit, minmax(220px, 260px)); justify-content: center; }
+
 /* ---------- Contact ---------- */
 .contact__grid {
   display: grid;
@@ -832,7 +845,6 @@ input, textarea { font: inherit; }
   .nav__link { justify-content: center; }
   .nav-toggle { display: flex; }
   .header__actions .btn--sm { display: none; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
   .ask-ai__label { display: none; }
   .ask-ai { padding: 12px; border-radius: 12px; bottom: 76px; }
 }
