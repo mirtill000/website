@@ -83,32 +83,26 @@ const SITE_DATA = {
     {
       date: "2019 — Present",
       role: "Cyber Security Director",
-      company: "Campari Group",
-      desc: "Leading global cyber security strategy and incident response, including the rollout of Microsoft Defender and Sentinel across the group following the 2020 ransomware attack."
+      company: "Consumer Goods & Beverage Industry",
+      desc: "Leading global cyber security strategy, governance and incident response for a multinational group, driving enterprise-wide adoption of modern security tooling and threat detection."
     },
     {
       date: "2015 — 2019",
       role: "Cyber Security Manager",
-      company: "Mediobanca",
-      desc: "Managed cyber security operations, risk assessment and fraud prevention programs for one of Italy's leading investment banking groups."
+      company: "Investment Banking Sector",
+      desc: "Managed cyber security operations, risk assessment and fraud prevention programs for a leading financial services institution."
     },
     {
       date: "2013 — 2015",
       role: "Cyber Security Manager",
-      company: "EFSA (European Food Safety Authority)",
-      desc: "Oversaw IT security and risk management, protecting the agency's systems and data across its EU-wide operations."
+      company: "Public Sector / EU Institutions",
+      desc: "Oversaw IT security and risk management, protecting critical systems and data across a European Union agency's operations."
     },
     {
       date: "2008 — 2013",
       role: "Cyber Security Manager",
-      company: "Telecom Italia",
-      desc: "Managed cyber security and fraud management initiatives for one of Italy's largest telecommunications providers."
-    },
-    {
-      date: "2008 — 2013",
-      role: "Cyber Security Manager",
-      company: "Emaze",
-      desc: "In parallel, provided cyber security management and consulting support at Emaze."
+      company: "Telecommunications & Technology Sectors",
+      desc: "Managed cyber security and fraud management initiatives across parallel roles in telecommunications and technology organizations."
     }
   ],
 
