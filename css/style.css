@@ -335,6 +335,8 @@ input, textarea { font: inherit; }
   border-radius: var(--radius-sm);
   border: 3px solid var(--ink);
   box-shadow: 6px 6px 0 0 var(--ink);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .hero__scroll {
